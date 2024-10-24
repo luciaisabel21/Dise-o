@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelementos</title>
+</head>
+<body>
+
+    <b>Marco</b>
+</body>
+<style>
+    b {
+        background-color: yellowgreen;
+    }
+    b::before{
+        content: "buenos dias ";
+        color: red;
+    }
+
+    b::after {
+        content: ", como está?";
+        color: pink
+         }
+
+</style>
+</html>

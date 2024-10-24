@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Margen negativo</title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-top"></div>
+        <img src="imagen.png">
+        <div class="card-body">
+            <h2>Lorem Impsum</h2>
+            <p>Non eligendi accusantium qui fugiat ab bladitis. Impeditmolitia architecto et sequi et
+             itaqui molestias. Sed quasi omnis ut soluta.
+            </p>
+        </div>
+    </div>
+
+</body>
+<style>
+    .card {
+    width: 250px;
+    background-color: #e0d4f3; 
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    overflow: hidden; /* Evitar que el contenido salga del borde redondeado */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Sección superior de la tarjeta */
+.card-top {
+    background-color: #7e57c2; 
+    height: 50px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: -50px; /* Hace que la imagen sobresalga */
+    border: 4px solid white; /* Borde blanco alrededor de la imagen */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333; /* Color del título */
+}
+
+.card-body p {
+    color: #555; /* Color del texto del párrafo */
+    font-size: 0.9em;
+}
+
+
+</style>
+</html>

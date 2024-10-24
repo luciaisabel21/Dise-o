@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+</head>
+<body>
+     <div class="container">
+        <div class="block1">
+            <h1>Título parrafo 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Iusto cumque sint maxime sit, magnam asperiores mollitia. Voluptatibus molestiae delectus consequuntur cupiditate totam illo fugiat nam itaque maiores ad. Quo, tenetur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eius fugit ipsam hic temporibus voluptatibus nihil itaque reprehenderit maxime deleniti nobis ducimus quas nisi quae sapiente corrupti, alias quaerat dolore.</p>
+        </div>
+
+        <div class="block2">
+            <h2>titulo parrafo 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eveniet unde, nesciunt possimus labore non quisquam aut impedit, nisi, architecto pariatur provident voluptatem ipsum expedita natus porro reiciendis esse ratione repellendus.</p>
+            <p>Quidem veritatis esse, fugit apriam commodi ratione, culpa distinctio nemo fugiat delectus quia eos laboram nihil.</p>
+        </div>
+    </div>
+
+</body>
+
+<style>
+
+body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            display: block;
+        }
+
+        .block1, .block2 {
+            width: 48%;
+            padding: 20px;
+        }
+
+        .block1 {
+            background-color: #e8e8e8;
+        }
+
+        .block2 {
+            background-color: #a8a8a8;
+            color: white;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: lowercase;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        @media only screen and (max-width: 800px) {
+            div {
+                display: block;
+                width: 100px;
+            }
+        }
+
+
+
+
+
+
+
+</style>
+</html>

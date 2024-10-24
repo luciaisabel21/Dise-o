@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Object-fit , Object-position </title>
+</head>
+<body>
+    <div class="caja">
+        <img src="pajaro.jpeg"> 
+    </div>
+    
+</body>
+
+<style>
+    .caja{
+        margin: 25px;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+
+    }
+    .caja img {
+        height: 100%;
+        width: 100%;
+        border: 5px solid blue;
+        object-fit: cover;  /* para ajustar el tamaño de la imangen respecto a la caja*/
+        object-position:  50px 50px; /* para mover la imagen a un lado */
+    }
+
+
+
+</style>
+</html>
