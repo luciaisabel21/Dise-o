@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox: flex-direction</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+    </div>
+    
+</body>
+<style>
+    body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column; 
+    
+    
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+    background-color: hotpink;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+}
+
+</style>
+</html>
