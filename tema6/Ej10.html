@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+</head>
+<body>
+    <div class="contenedor_menu">
+        <div class="logo">Mi Sitio Web</div>
+        <div class="navegador">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mí</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+
+    <div class="contenedor_body">
+        <div class="bienvenido">
+            <h1>Bienvenido</h1>
+            <p>Este es un ejemplo de práctica usando Flexbox y BEM.</p>
+        </div>
+        <div class="noticias">
+            <h2>Noticias</h2>
+            <ul>
+                <li>Noticia 1</li>
+                <li>Noticia 2</li>
+                <li>Noticia 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Mi Sitio Web
+    </div>
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor_menu {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y el menú de navegación */
+    align-items: center;
+    background-color: rgb(0, 102, 255);
+    padding: 15px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navegador a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contenedor_body {
+    display: flex;
+    justify-content: space-between; /* Espacio entre Bienvenido y Noticias */
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.bienvenido {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.noticias {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 15px;
+    
+}
+.noticias ul {
+    list-style-type: none; /* Quito los puntos de la lista */
+}
+
+.footer {
+    display: flex;
+    justify-content: center; /* lo centro*/
+    align-items: center;
+    background-color: rgb(0, 110, 255);
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+</style>
+</html>
