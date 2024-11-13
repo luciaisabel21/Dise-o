@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con Flex</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #add8e6; 
+            padding: 20px;
+            text-align: left; 
+            font-size: 1.5rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 70vh; 
+        }
+
+        main {
+            flex: 3;
+            background-color: #e89b83; 
+            padding: 20px;
+            text-align: left; 
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f8c3c3; 
+            padding: 20px;
+            text-align: left; 
+        }
+
+        footer {
+            background-color: #00ff00; 
+            padding: 20px;
+            text-align: left; 
+        }
+
+        /* Media Queries*/
+        @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+            main, aside {
+                flex: unset;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Con Flex</header>
+    <div class="container">
+        <main>main</main>
+        <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>

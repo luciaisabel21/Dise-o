@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrícula de Colores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box blue">1</div>
+        <div class="box light-green">2</div>
+        <div class="box red">3</div>
+        <div class="box yellow">4</div>
+        <div class="box light-green">5</div>
+        <div class="box light-green">6</div>
+        <div class="box light-green">7</div>
+        <div class="box light-green">8</div>
+        <div class="box light-green">9</div>
+        <div class="box light-green">10</div>
+    </div>
+</body>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #FF7E5F, #FEB47B);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 3fr 3fr 0.5fr 0.5fr;
+    gap: 2px;
+    width: 80vw;
+    height: 50vh;
+    border: 5px solid #FF7E5F;
+    padding: 2px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilos y posiciones específicas */
+.blue {
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.light-green {
+    background-color: lightgreen;
+}
+
+.red {
+    background-color: red;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+/* Penúltima fila con las celdas 5, 6 y 7 alineadas horizontalmente */
+.light-green:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.light-green:nth-child(6) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.light-green:nth-child(7){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+</style>
+
+</html>

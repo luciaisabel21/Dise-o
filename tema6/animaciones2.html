@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+   .content {
+   filter:contrast(20);
+      background: #fff;
+    }
+
+    /* Estilo para cada círculo */
+    .caja {
+    display: inline-block;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle, rgb(130, 216, 238), rgb(68, 0, 255));
+      margin:40px;
+      border-radius: 50%;
+      filter:blur(10px);
+    
+    }
+    /* Posicionamos el segundo círculo a la derecha del primero */
+    .caja:first-child{
+      animation: pegajoso 2s alternate infinite;
+    }
+      @keyframes pegajoso {
+        0% {
+            transform: translate(0);
+      }
+      100% {
+        transform: translate(160px);
+      }
+    }
+
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="caja"></div>
+        <div class="caja"></div>
+
+    </div>
+</body>
+</html>
