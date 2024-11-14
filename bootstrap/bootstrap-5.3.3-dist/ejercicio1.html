@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .row > div {
+            background-color:aqua;
+            margin: 10px 0;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid"> <!-- si pones container- fluid te ocupara todo el largo de la pantalla, sin respetar margenes, si no lo pones te deja margenes-->
+        <div class="row">
+            <!--- bootstrap tiene 12 columnas, ent si yo le doy 2 al primer div, me va a ajustar ese div a 2 columnas, y los otros dos divs se 
+            harán más grandes ya que tienen que ocupar las 10 columnas restantes, ent los otros dos div ocuparan 5 columnas cada uno-->
+            <!-- si tenemos 2 elementos y a uno de ellos le pones col-12, ya ocuparia las 12 columnas, entonces el otro elemento ocuparia 0 columnas y lo moveria 
+             a abajo-->
+            <div class="col-2">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button class="btn btn-primary">Info</button>
+            </div>
+            <div class="col">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button class="btn btn-primary">Info</button>
+            </div>
+            <div class="col">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button class="btn btn-primary">Info</button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>Hola Mundo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <button class="btn btn-primary">Info</button>
+                </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
