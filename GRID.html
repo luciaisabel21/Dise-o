@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título del Sitio</title>
+  <style>
+    /* Estilos globales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #9c27b0, #03a9f4);
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* Tres filas: encabezado, contenido principal y pie de página */
+      min-height: 100vh;
+    }
+
+    .page__header {
+      text-align: center;
+      padding: 10px;
+      background-color: #005f9e;
+      color: white;
+    }
+
+    .page__title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .page__footer {
+      font-size: 14px;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      background-color: #093350;
+    }
+
+    .page__main {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .content {
+      background-color: white;
+      padding: 35px;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .content__title {
+      font-size: 19px;
+      color: red;
+      margin-bottom: 40px;
+    }
+
+    .content__items {
+      display: grid; /* Usamos Grid aquí */
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajuste dinámico de las columnas */
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .content__item {
+      background-color: #2196f3;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .content__item--active {
+      background-color: red;
+    }
+
+    /* Diseño Responsive */
+    @media (max-width: 768px) {
+      .content__items {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, cambia a una sola columna */
+      }
+    }
+  </style>
+</head>
+<body class="page">
+  <header class="page__header">
+    <h1 class="page__title">Título del Sitio</h1>
+  </header>
+  <main class="page__main">
+    <section class="content">
+      <h2 class="content__title">Contenido Principal</h2>
+      <ul class="content__items">
+        <li class="content__item content__item--active">Elemento 1</li>
+        <li class="content__item">Elemento 2</li>
+        <li class="content__item">Elemento 3</li>
+        <li class="content__item">Elemento 4</li>
+        <li class="content__item">Elemento 5</li>
+        <li class="content__item">Elemento 6</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p class="page__socials">Redes Sociales.</p>
+  </footer>
+</body>
+</html>

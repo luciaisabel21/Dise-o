@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con Grid</title>
+    
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+header {
+    background-color: #b4e7b4;
+    padding: 20px;
+    text-align: left; 
+    font-size: 1.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: calc(100vh - 60px); /* Resto la altura del header */
+}
+
+main {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #a3e4f3; 
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+aside {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #fff176; 
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    background-color: #f8b8d2; 
+    padding: 20px;
+    text-align: left; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Media Queries*/
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+    
+    main {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    aside {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    footer {
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>Con Grid</header>
+    <div class="grid-container">
+        <main>main</main>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

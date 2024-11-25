@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Lucia Isabel</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background: linear-gradient(to bottom, blue, violet);
+        }
+
+      
+   
+        .header{
+            background: linear-gradient();
+            padding: 1rem;
+            text-align: center;
+            background: #37c0e2;
+        }
+        .header__title {
+             font-size: 2rem;
+             
+             width: 100%;
+        }
+        .main {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+        }
+      
+        .menu {
+            flex: 1;
+            background: #0c3d64;
+            padding: 1rem;
+        }
+        .menu--izquierda{
+            order: 1;
+        }
+        .menu--derecha{
+            order: 3;
+        }
+        .menu_nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .menu__buttom{
+            background-color: #031d33;
+            padding: 0.5rem 1 rem;
+            border-radius: 5px;
+            color: white;
+            
+            
+        }
+
+        .menu__buttom:hover{
+            background: #4682B4;
+        }
+
+        .content{
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            order: 2;
+            width: 100%;
+            background: linear-gradient(to right, #6A5ACD, #FFF);
+
+        }
+        .content__title{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            color: #031d33;
+        }
+        .content__list{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .content__item{
+            background: #549294;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+        
+        }
+        .content__item:hover{
+            background: #4682B4;
+            transform: scale(1.1);
+        }
+        .content__item--red{
+            background-color: red;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            background: linear-gradient();
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .gallery__item{
+            height: 150px;
+            background: #fff;
+            border-radius: 10px;
+            
+        }
+        .gallery__item:hover{
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(48, 61, 68, 0.966);
+        }
+
+        .footer__text {
+            font-size: 0,9rem;
+        }
+
+        @media (max-width: 768px){
+            .main {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title"> Titulo del Sitio </h1>
+    </header>
+    <main class="main"> 
+        <aside class="menu menu--izquierda">
+            <nav class="menu__nav"> Menu izquierdo <br>
+                <buttom class="menu__buttom"> Opcion 1</buttom> <br>
+                <buttom class="menu__buttom"> Opcion 2</buttom> <br>
+                <buttom class="menu__buttom"> Opcion 3</buttom> <br>
+            </nav>
+        </aside>
+
+        <section class="content">
+            <h2 class="content__title"> Contenido Principal </h2>
+            <div class="content__list"> 
+                <button class="content__item content__item--red"> Elemento 1</button>
+                <buttom class="content__item"> Elemento 2 </buttom>
+                <buttom class="content__item"> Elemento 3 </buttom>
+                <buttom class="content__item"> Elemento 4 </buttom>
+                <buttom class="content__item"> Elemento 5 </buttom>
+                <buttom class="content__item"> Elemento 6 </buttom>
+            </div>
+            
+            
+            <section class="gallery">
+                <img src="imagen.png" class="gallery__item"> </img>
+                <img src="imagen.png" class="gallery__item"> </img>
+                <img src="imagen.png" class="gallery__item"> </img>
+                <img src="imagen.png" class="gallery__item"> </img>
+                <img src="imagen.png" class="gallery__item"> </img>
+                <img src="imagen.png" class="gallery__item"> </img>
+            </section>
+        </section>
+
+        <aside class="menu menu--derecha">
+            <nav class="menu__nav"> Menu Derecha <br>
+                <buttom class="menu__buttom"> Opcion A</buttom> <br>
+                <buttom class="menu__buttom"> Opcion B</buttom> <br>
+                <buttom class="menu__buttom"> Opcion C</buttom> <br>
+            </nav>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text"> 2024 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
