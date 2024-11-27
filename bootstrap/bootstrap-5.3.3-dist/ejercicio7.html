@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+       .row {
+         background: salmon;
+         margin-top: 20px;
+    }
+
+    .contenido {
+        background: beige;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid blueviolet;
+    }
+       
+    </style>
+</head>
+<body>
+    <!-- Es para ordenar los items, pero solo tenemos del 1 al 5,
+     en este caso, tenemos columa1, columna2, columna3 y columna 4 y cuando hacemos la pantalla mas
+     pequeña cambia a columna4,columna3,columna2,columna1.
+     Esto lo conseguimos con: order -md-1, order-md-2, order-md-3, order-md-4 -->
+    <div class="container"> 
+        <div class="row">
+                <div class="contenido col order-4 order-md-1"> Columna #1</div>
+                <div class="contenido col order-3 order-md-2"> Columna #2</div>
+                <div class="contenido col order-2 order-md-3"> Columna #3</div>
+                <div class="contenido col order-1 order-md-4"> Columna #4</div>
+            </div>
+        </div>
+            
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
