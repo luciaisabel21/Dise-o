@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards with Collapse</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(203, 197, 168);
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <!-- Primera columna con tarjeta de navegación con collapse -->
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" data-bs-toggle="collapse" data-bs-target="#contenido1">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#contenido2">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#contenido3">Enlace 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#contenido4">Enlace 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div id="contenido1" class="collapse">
+                            <h5 class="card-title">Titulo</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis.</p>
+                        </div>
+                        <div id="contenido2" class="collapse">
+                            <h5 class="card-title">Titulo</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis.</p>
+                        </div>
+                        <div id="contenido3" class="collapse">
+                            <h5 class="card-title">Titulo</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis.</p>
+                        </div>
+                        <div id="contenido4" class="collapse">
+                            <h5 class="card-title">Titulo</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis.</p>
+                        </div>
+                        <button type="button" class="btn btn-primary mt-3">Boton</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda columna con tarjeta de navegación con collapse -->
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-pills card-header-pills">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" data-bs-toggle="collapse" data-bs-target="#contenido5">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#contenido6">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#contenido7">Enlace 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#contenido8">Enlace 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div id="contenido5" class="collapse">
+                            <h5 class="card-title">Titulo</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis.</p>
+                        </div>
+                        <div id="contenido6" class="collapse">
+                            <h5 class="card-title">Titulo</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis.</p>
+                        </div>
+                        <div id="contenido7" class="collapse">
+                            <h5 class="card-title">Titulo</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis.</p>
+                        </div>
+                        <div id="contenido8" class="collapse">
+                            <h5 class="card-title">Titulo</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat voluptas asperiores nobis provident laboriosam debitis.</p>
+                        </div>
+                        <button type="button" class="btn btn-primary mt-3">Boton</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario rango</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- formulario: range, con propiedades primary y deshabilitado -->
+    <!--  dentro del css de bootstrap
+$form-range-track-width:          100%;
+$form-range-track-height:         .5rem;
+$form-range-track-cursor:         pointer;
+$form-range-track-bg:             $gray-300;
+$form-range-track-border-radius:  1rem;
+$form-range-track-box-shadow:     $box-shadow-inset;
+
+$form-range-thumb-width:                   1rem;
+$form-range-thumb-height:                  $form-range-thumb-width;
+$form-range-thumb-bg:                      $component-active-bg;
+$form-range-thumb-border:                  0;
+$form-range-thumb-border-radius:           1rem;
+$form-range-thumb-box-shadow:              0 .1rem .25rem rgba($black, .1);
+$form-range-thumb-focus-box-shadow:        0 0 0 1px $body-bg, $input-focus-box-shadow;
+$form-range-thumb-focus-box-shadow-width:  $input-focus-width; // For focus box shadow issue in Edge
+$form-range-thumb-active-bg:               tint-color($component-active-bg, 70%);
+$form-range-thumb-disabled-bg:             $gray-500;
+$form-range-thumb-transition:              background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -->
+
+    
+
+    <div class="container">
+        <div class="row mt-5">
+            <!-- Rango Precio -->
+            <div class="col-6">
+                <label for="rango" class="form-label">Precio</label>
+                <input type="range" class="form-range" id="rango" min="0" max="1000" step="250">
+                <div class="d-flex justify-content-between">
+                    <p class="form-text">0 €</p>
+                    <p class="form-text">1000 €</p>
+                </div>
+                <div>
+                    <span id="precio-valor">500 €</span> <!-- Muestra el valor actual del rango -->
+                </div>
+            </div>
+
+            <!-- Rango Deshabilitado -->
+            <div class="col-6">
+                <label for="disable-rango" class="form-label">Valor</label>
+                <input type="range" class="form-range" id="disable-rango" min="0" max="1000" step="250" disabled>
+                <div class="d-flex justify-content-between">
+                    <p class="form-text">0 €</p>
+                    <p class="form-text">1000 €</p>
+                </div>
+                <div>
+                    <span>Valor deshabilitado</span> <!-- Indicador de que el control está deshabilitado -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Actualiza el valor del control deslizante en tiempo real
+        const rango = document.getElementById("rango");
+        const precioValor = document.getElementById("precio-valor");
+
+        rango.addEventListener("input", function() {
+            precioValor.textContent = `${rango.value} €`;
+        });
+    </script>
+</body>
+</html>
