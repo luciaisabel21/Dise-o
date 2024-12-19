@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Formulario </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body class="bg-success">
+    <div class="container text-warning">
+      <form action="">
+        <div class="row mt-5">
+          <div class="col-sm-12 col-md-6 mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Marco Zarate"
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <label for="correo" class="form-label">Correo</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="correo@gmail.com"
+            />
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-6 mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control"></textarea>
+          </div>
+
+          <div class="col-sm-12 col-md-3 ">
+            <label for="nombre" class="form-label">Estado Civil</label>
+
+            <div class="form-check">
+              <input
+                type="radio"
+                name="mi-radio-button"
+                class="form-check-input"
+                id="radio-1"
+              />
+              <label for="radio-1" class="form-check-label">Soltero</label>
+            </div>
+
+            <div class="form-check">
+              <input
+                type="radio"
+                name="mi-radio-button"
+                class="form-check-input"
+                id="radio-2"
+              />
+              <label for="checkbox-2" class="form-check-label">Casado</label>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-3">
+            <label for="nombre" class="form-label">País</label>
+            <select
+              name="pais"
+              id="pais"
+              class="form-select mb-3"
+              aria-label="Seleccion de pais"
+            >
+              <option value="Francia">Portugal</option>
+              <option value="España">España</option>
+              <option value="Portugal">Francia</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="row mt-3">
+        <div class="col-md-12 d-grid justify-content-center">
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="checkbox-1" />
+            <label for="checkbox-1" class="form-check-label"
+              >Acepto las condiciones de uso</label
+            >
+          </div>
+          <button class="btn btn-primary" type="button">Enviar</button>
+        </div>
+
+        
+        </div>
+      </form>
+    </div>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</body>
+</html>
