@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    body{
+        background-color: green;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NavBar</a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Categoría 1</a></li>
+                        <li><a class="dropdown-item" href="#">Categoría 2</a></li>
+                        <li><a class="dropdown-item" href="#">Categoría 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="ms-5">
+        <h1>Hola Mundo</h1>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
